@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Board</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="drawingCanvas"></canvas>
+        <div class="controls">
+            <input type="color" id="colorPicker" value="#000000">
+            <input type="range" id="brushSize" min="1" max="50" value="5">
+            <input type="text" id="textInput" placeholder="Enter text">
+            <button id="addText">Add Text</button>
+            <button id="clearCanvas">Clear Canvas</button>
+            <button id="saveImage">Save</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

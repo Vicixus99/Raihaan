@@ -1,0 +1,115 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #e3dede;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    height: 540px;
+    max-width: 1050px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tools-board{
+    width: 210px;
+    height: 590px;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 6px 20px;
+}
+
+.tools-board .row{
+    margin-bottom: 20px;
+}
+
+.row .options{
+    list-style: none;
+    margin: 10px 0 0 5px;
+}
+
+.row .options .option{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.colors{
+    position: absolute;
+    content: "";
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    background: inherit;
+    border-radius: inherit;
+    border: 2px solid #fff;
+}
+
+.option #color-picker{
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+}
+
+.buttons .clear-canvas, .buttons .save-img{
+    width: 80%;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons .clear-canvas{
+    color: black;
+    border: 1px solid #ffffff;
+    transition: all;
+    border: 2px solid black;
+    font-size: 15px;
+    padding: 3px 3px;
+}
+
+.clear-canvas:hover{
+    color: #fff;
+    background: #020508;
+}
+
+.buttons .save-img{
+    color: black;
+    border: 1px solid #fff;
+    transition: all 0.2s;
+    border: 2px solid black;
+    font-size: 15px;
+    padding: 3px 3px;
+}
+
+.save-img:hover{
+    color: #fff;
+    background: #020508;
+}
+
+.drawing-board{
+    flex: 1;
+}
+
+.drawing-board canvas{
+    width: 100%;
+    height: 600px;
+    border-radius: 30px;
+}
